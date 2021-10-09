@@ -52,7 +52,7 @@ setInterval(() => {
             only_opensea: 'false'
         }
     }).then((response) => {
-        console.log(response)
+        //console.log(response)
         const events = _.get(response, ['data', 'asset_events']);
 
         const sortedEvents = _.sortBy(events, function(event) {
