@@ -8,6 +8,7 @@ const cache = require("./cache");
 // Format tweet text
 function formatAndSendTweet(event) {
   // Handle both individual items + bundle sales
+
   const assetName = _.get(
     event,
     ["asset", "name"],
@@ -96,4 +97,4 @@ setInterval(() => {
     .catch((error) => {
       console.error(error);
     });
-}, 150000);
+}, 90000);
